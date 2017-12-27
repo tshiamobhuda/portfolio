@@ -86,3 +86,9 @@ ul.prof li#coreldraw icon {
 ul.prof li#msoffice icon {
     background: url(../img/proficiency-icons.png) -1060px 0;
 }
+
+/* Professional Skills*/
+table {
+    width: 100%;
+    margin: 25px auto 0;
+}
