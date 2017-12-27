@@ -13,6 +13,22 @@
     font-size: 16pt;
 }
 
+/* Global styles */
+
+ul {
+    padding: 0;
+    margin: 10px auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+
 /*
     Top heading styling
 */
