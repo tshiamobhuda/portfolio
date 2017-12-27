@@ -92,3 +92,23 @@ table {
     width: 100%;
     margin: 25px auto 0;
 }
+
+/* Contact Icons */
+ul.contact {
+    padding: 0;
+    text-align: justify;
+}
+
+ul.contact li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+ul.contact li span {
+    padding-right: 20px;
+    font-size: 20pt;
+}
+
+ul.contact li p {
+    display: inline-block;
+}
