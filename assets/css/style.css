@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'TopHeader';
+    src: url('../fonts/Adam.otf');
+}
+
+@font-face {
+    font-family: 'Default';
+    src: url('../fonts/Unified-Regular.ttf');
+}
+
+* {
+    font-family: 'Default';
+    font-size: 16pt;
+}
+
+/*
+    Top heading styling
+*/
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.center-v {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.top-header {
+    background: #111;
+    color: #f1f1f1;
+    padding: 20px
+}
+
+.top-header-text {
+    font-family: 'TopHeader';
+    font-size: 42pt;
+}
