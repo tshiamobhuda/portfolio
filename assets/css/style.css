@@ -37,3 +37,52 @@
     font-family: 'TopHeader';
     font-size: 42pt;
 }
+
+/* Hading Styling*/
+
+.heading-box {
+    padding: 10px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+/* Profiency icons*/
+
+ul.prof li {
+    list-style: none;
+    padding: 5px;
+    display: inline-block;
+    /*float: left;*/
+}
+
+ul.prof li  icon {
+    height: 200px;
+    width: 180px;
+    line-height: 50px;
+    display: block;
+    background: url('../img/proficiency-icons.png') no-repeat;
+}
+
+ul.prof li#autocad icon {
+    background-position: 0 0
+}
+
+ul.prof li#revit icon {
+    background: url(../img/proficiency-icons.png) -190px 0;
+}
+
+ul.prof li#photoshop icon {
+    background: url(../img/proficiency-icons.png) -385px 0;
+}
+
+ul.prof li#illustrator icon {
+    background: url(../img/proficiency-icons.png) -590px 0;
+}
+
+ul.prof li#coreldraw icon {
+    background: url(../img/proficiency-icons.png) -800px 0;
+}
+
+ul.prof li#msoffice icon {
+    background: url(../img/proficiency-icons.png) -1060px 0;
+}
