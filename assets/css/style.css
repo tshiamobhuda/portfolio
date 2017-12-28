@@ -71,6 +71,18 @@ ul.nav-pills li a {
     background-color: #111;
 }
 
+ul.nav-pills.affix {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: auto;
+    z-index: 1;
+    margin-top: 0;
+    border-bottom: 1px solid #777;
+    background-color: #fff;
+}
+
 /* Profiency icons*/
 
 ul.prof li {
