@@ -128,3 +128,13 @@ ul.contact li span {
 ul.contact li p {
     display: inline-block;
 }
+
+/* Vectical svg line */
+.svg-line{
+    background: url('../img/v-line.svg');
+    position: absolute;
+    height: 140pc;
+    width: 20px;
+    top: 0;
+    right: 0;
+}
