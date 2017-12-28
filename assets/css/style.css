@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'TopHeader';
+    src: url('../fonts/Adam.otf');
+}
+
+@font-face {
+    font-family: 'Default';
+    src: url('../fonts/Unified-Regular.ttf');
+}
+
+* {
+    font-family: 'Default';
+    font-size: 16pt;
+}
+
+/* Global styles */
+
+ul {
+    padding: 0;
+    margin: 10px auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+.align-text {
+    text-align: center;
+}
+
+/*
+    Top heading styling
+*/
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.center-v {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.top-header {
+    background: #111;
+    color: #f1f1f1;
+    padding: 20px
+}
+
+.top-header-text {
+    font-family: 'TopHeader';
+    font-size: 42pt;
+}
+
+/* Hading Styling*/
+
+.heading-box {
+    padding: 10px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+ul.nav-pills li a {
+    border-radius: unset;
+    color: #777
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #111;
+}
+
+ul.nav-pills.affix {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: auto;
+    z-index: 1;
+    margin-top: 0;
+    border-bottom: 1px solid #777;
+    background-color: #fff;
+}
+
+/* Profiency icons*/
+
+ul.prof li {
+    list-style: none;
+    padding: 5px;
+    display: inline-block;
+    /*float: left;*/
+}
+
+ul.prof li  icon {
+    height: 200px;
+    width: 180px;
+    line-height: 50px;
+    display: block;
+    background: url('../img/proficiency-icons.png') no-repeat;
+}
+
+ul.prof li#autocad icon {
+    background-position: 0 0
+}
+
+ul.prof li#revit icon {
+    background: url(../img/proficiency-icons.png) -190px 0;
+}
+
+ul.prof li#photoshop icon {
+    background: url(../img/proficiency-icons.png) -385px 0;
+}
+
+ul.prof li#illustrator icon {
+    background: url(../img/proficiency-icons.png) -590px 0;
+}
+
+ul.prof li#coreldraw icon {
+    background: url(../img/proficiency-icons.png) -800px 0;
+}
+
+ul.prof li#msoffice icon {
+    background: url(../img/proficiency-icons.png) -1060px 0;
+}
+
+/* Professional Skills*/
+table {
+    width: 100%;
+    margin: 25px auto 0;
+}
+
+/* Contact Icons */
+ul.contact {
+    padding: 0;
+    text-align: justify;
+}
+
+ul.contact li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+ul.contact li span {
+    padding-right: 20px;
+    font-size: 20pt;
+}
+
+ul.contact li p {
+    display: inline-block;
+}
+
+/* Vectical svg line */
+.svg-line{
+    display: none;
+}
+
+/* How things are seen in desktop mode */
+
+@media only screen and (min-width : 992px) {
+
+    * {
+        font-size: 20pt;
+    }
+
+    .center-v {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: unset;
+        margin-bottom: 10px;
+    }
+
+    .svg-line{
+        display: block;
+        background: url('../img/v-line.svg');
+        position: absolute;
+        height: 140pc;
+        width: 20px;
+        top: 0;
+        right: 0;
+    }
+
+    .align-text {
+        text-align: justify;
+    }
+    
+}

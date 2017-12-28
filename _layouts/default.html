@@ -1,40 +1,358 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   <meta charset="utf-8">
-   <title>{{ page.title }} - {{ site.title }}</title>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
 
-   <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/style.css" >
+    <link rel="stylesheet" type="text/css" href="{{ site.path }}/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.path }}/assets/css/style.css">
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   <script src="{{ site.path }}/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="{{ site.path }}/assets/js/bootstrap.min.js"></script>
 </head>
-<body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">{{ site.title }}</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="https://github.com/henrythemes/jekyll-bootstrap-theme">About</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
 
-    <div class="container">
-      <div class="content">
-        {{ content }}
-      </div>
-    </div><!-- /.container -->
+<body>
+
+    <section class="margin-top-40">
+        <div class="container">
+            <div class="row center-v">
+                <div class="col-md-push-8 col-md-4">
+                    <!-- <img src="{{ site.path }}/assets/img/myprofile.png" alt="" class="img-responsive"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="300px"
+                        height="320px">
+
+                        <circle cx="16" cy="155" r="10" style="stroke: #777; stroke-width: 4; fill: #777;" />
+
+                        <line x1="15" y1="155" x2="285" y2="155" style="stroke: #777; stroke-width: 4;"/>
+
+                        <image width="300" height="320" xlink:href="./assets/img/myprofile.png" />
+
+                        <circle cx="284" cy="155" r="10" style="stroke: #777; stroke-width: 4; fill: #777;" />
+
+                    </svg>
+
+                </div>
+
+                <div class="col-md-pull-4 col-md-8">
+                    <header class="text-center top-header">
+                        <h1 class="top-header-text">{{ site.title }}</h1>
+                        <p>Interior Designer student &amp; Freelance designer/artist</p>
+                    </header>
+                    <ul class="nav nav-pills nav-justified" data-spy="affix" data-offset-top="400">
+                        <li class="active"><a href="#about">ABOUT</a></li>
+                        <li><a href="#proficiency">PROFICIENCY</a></li>
+                        <li><a href="#interest">INTEREST</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#experience">EXPERIENCE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="svg-line"></div>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">CONTACT</h1>
+                        <ul class="contact">
+                            <li class="center-v">
+                                <span class="glyphicon glyphicon-home"></span>
+                                <p>
+                                    1704 Block R Hlangani str <br>
+                                    Soshanguve, Pretoria 0152
+                                </p>
+                            </li>
+                            <li class="center-v">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                                <p>
+                                    tuminkie.m@gmail.com
+                                </p>
+                            </li>
+                            <li class="center-v">
+                                <span class="glyphicon glyphicon-phone"></span>
+                                <p>
+                                    076&nbsp;611&nbsp;5215 <br>
+                                    074&nbsp;944&nbsp;8271
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">PROFILE</h1>
+                        <dl class="align-text">
+                            <dt>Gender:</dt>
+                            <dd>Female</dd>
+                            <dt>Identity Number:</dt>
+                            <dd>930917&nbsp;0455&nbsp;0899</dd>
+                            <dt>Licence:</dt>
+                            <dd>No</dd>
+                            <dt>Relationship:</dt>
+                            <dd>Single</dd>
+                        </dl>
+                    </article>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">ACHIEVEMENTS</h1>
+                        <p class="align-text">
+                            Paint a car competition <br>
+                            Distinction in Design <br>
+                        </p>
+                    </article>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">ATTRIBUTES</h1>
+                        <ul class="align-text">
+                            <li>Hard working</li>
+                            <li>Reliable</li>
+                            <li>Honest</li>
+                            <li>Polite</li>
+                            <li>Responsible</li>
+                            <li>Hands on</li>
+                        </ul>
+                    </article>
+
+                    <article class="text-center" id="interest">
+                        <h1 class="heading-box">INTERESTS</h1>
+                        <ul class="align-text">
+                            <li>Illustration</li>
+                            <li>Photography</li>
+                            <li>Visual art</li>
+                            <li>Industrial design</li>
+                        </ul>
+                    </article>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">REFERENCE</h1>
+                        <p class="align-text">
+                            Orvall corporate designs <br>
+                            Samketi Dlamini <br>
+                            Supervisor to Intern <br>
+                            076&nbsp;757&nbsp;6099
+                        </p>
+
+                        <p class="align-text">
+                            Uthando Primary School <br>
+                            R.J Ngobeni <br>
+                            Supervisor to Intern <br>
+                            012&nbsp;712&nbsp;0022
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md-8">
+                    <article class="text-center" id="about">
+                        <h1 class="heading-box">ABOUT ME</h1>
+                        <p>
+                            I'm a 24 year  old female third year Interior Design student  who has a love for
+                            combining realism &amp; illustration sketch together. My design style would be
+                            relavent in contemporary chic or rustic industrial. I'm a hard worker and business
+                            minded by helpling my mother with her mini confectionery business and being a
+                            freelance designer/artist. I believe that every mountain top is within reach if
+                            you just keep climbing.
+                        </p>
+                    </article>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">EDUCATION</h1>
+
+                        <h2>Secondary Education</h2>
+                        <p>
+                            Pro Arte Alphen Park <br>
+                            National Senior Certificate <br>
+                            2012
+                        </p>
+
+                        <h2>Tertiary Education</h2>
+                        <p>
+                            Tshwane University of Technology <br>
+                            National Diploma in Interior Design <br>
+                            Third Year
+                        </p>
+
+                        <h2>Subjects</h2>
+                        <p>
+                            Interior Design, Technical drawing &amp; construction, Professional Design Practice, Presentation, Design Theory, Technical Services, Materials, Photography, Model Building and Revit.
+                        </p>
+                    </article>
+
+                    <article class="text-center" id="proficiency">
+                        <h1 class="heading-box">PROFICIENCY</h1>
+                        <p>
+                            <ul class="prof">
+                                <li id="autocad">
+                                    <icon></icon>
+                                    <p>
+                                        AutoCad <br>
+                                        Intermediate
+                                    </p>
+                                </li>
+                                <li id="revit">
+                                    <icon></icon>
+                                    <p>
+                                        Revit <br>
+                                        Advanced
+                                    </p>
+                                </li>
+                                <li id="photoshop">
+                                    <icon></icon>
+                                    <p>
+                                        Photoshop <br>
+                                        Adanced
+                                    </p>
+                                </li>
+                                <li id="illustrator">
+                                    <icon></icon>
+                                    <p>
+                                        illustrator <br>
+                                        Beginner
+                                    </p>
+                                </li>
+                                <li id="coreldraw">
+                                    <icon></icon>
+                                    <p>
+                                        Corel Draw <br>
+                                        Beginner
+                                    </p>
+                                </li>
+                                <li id="msoffice">
+                                    <icon></icon>
+                                    <p>
+                                        Microsoft Office <br>
+                                        Intermediate
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </p>
+                    </article>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">PROFESSIONAL SKILLS</h1>
+                        <br>
+                        <table style="text-align: justify">
+                            <tr>
+                                <td>Design skills</td>
+                                <td>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Presentation skills</td>
+                                <td>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Working under pressure</td>
+                                <td>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Construction drawing</td>
+                                <td>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Team Work</td>
+                                <td>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Punctuality</td>
+                                <td>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Communication</td>
+                                <td>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                    <span class="glyphicon glyphicon-heart-empty"></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <article class="text-center" id="experience" >
+                        <h1 class="heading-box">EXPERIENCE</h1>
+
+                        <h2>Orvall corporate designs</h2>
+                        <p>
+                            Interior Design Intern <br>
+                            June 12 to July 28 2017
+                        </p>
+
+                        <h2>Uthando Primary School</h2>
+                        <p>
+                            Grade 6 learner mentor <br>
+                            April to December 2013
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="{{ site.path }}/assets/js/main.js"></script>
 
 </body>
+
 </html>

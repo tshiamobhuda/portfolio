@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <circle cx="10" cy="10" r="10" style="fill: #777;"/>
+
+    <line x1="10" y1="8" x2="10" y2="140pc"  style="stroke:#777; stroke-width:4px;" />
+
+</svg>
