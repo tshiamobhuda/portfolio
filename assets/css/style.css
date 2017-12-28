@@ -67,8 +67,8 @@ ul.nav-pills li a {
     color: #777
 }
 
-u.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background-color: #777;
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #111;
 }
 
 /* Profiency icons*/
