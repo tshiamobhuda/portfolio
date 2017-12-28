@@ -62,6 +62,15 @@ dd {
     display: inline-block;
 }
 
+ul.nav-pills li a {
+    border-radius: unset;
+    color: #777
+}
+
+u.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #777;
+}
+
 /* Profiency icons*/
 
 ul.prof li {
