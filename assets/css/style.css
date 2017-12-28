@@ -39,8 +39,9 @@ dd {
 
 .center-v {
     display: flex;
-    justify-items: center;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .top-header {
@@ -152,10 +153,27 @@ ul.contact li p {
 
 /* Vectical svg line */
 .svg-line{
-    background: url('../img/v-line.svg');
-    position: absolute;
-    height: 140pc;
-    width: 20px;
-    top: 0;
-    right: 0;
+    display: none;
+}
+
+/* How things are seen in desktop mode */
+
+@media only screen and (min-width : 992px) {
+
+    .center-v {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: unset;
+    }
+
+    .svg-line{
+        display: block;
+        background: url('../img/v-line.svg');
+        position: absolute;
+        height: 140pc;
+        width: 20px;
+        top: 0;
+        right: 0;
+    }
 }
