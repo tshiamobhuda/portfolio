@@ -10,7 +10,7 @@
 
 * {
     font-family: 'Default';
-    font-size: 16pt;
+    font-size: 20pt;
 }
 
 /* Global styles */
@@ -68,23 +68,41 @@ dd {
 
 ul.nav-pills li a {
     border-radius: unset;
-    color: #777
+    color: #777;
+    font-size: x-large;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     background-color: #111;
 }
 
-ul.nav-pills.affix {
+nav.affix {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     height: auto;
     z-index: 1;
-    margin-top: 0;
+    margin-top: -10px;
     border-bottom: 1px solid #777;
     background-color: #fff;
+    border-radius: 0;
+}
+
+/* Navbar styling */
+.navbar-default {
+    background: unset;
+    border: none;
+}
+
+.navbar-default button {
+    margin: 20px 10px 10px;
+    border-radius: initial;
+}
+
+.navbar-collapse {
+    padding-left: initial;
+    padding-right: initial;
 }
 
 /* Profiency icons*/
@@ -164,7 +182,7 @@ ul.contact li p {
 @media only screen and (min-width : 992px) {
 
     * {
-        font-size: 20pt;
+        font-size: 16pt;
     }
 
     .center-v {
@@ -188,5 +206,5 @@ ul.contact li p {
     .align-text {
         text-align: justify;
     }
-    
+
 }

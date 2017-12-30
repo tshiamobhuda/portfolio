@@ -3,10 +3,23 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Tshiamo Bhuda">
+
     <title>{{ site.title }}</title>
 
     <link rel="stylesheet" type="text/css" href="{{ site.path }}/assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{ site.path }}/assets/css/style.css">
+
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="{{ site.path }}/assets/js/bootstrap.min.js"></script>
@@ -41,13 +54,27 @@
                         <h1 class="top-header-text">{{ site.title }}</h1>
                         <p>Interior Designer student &amp; Freelance designer/artist</p>
                     </header>
-                    <ul class="nav nav-pills nav-justified" data-spy="affix" data-offset-top="400">
-                        <li class="active"><a href="#about">ABOUT</a></li>
-                        <li><a href="#proficiency">PROFICIENCY</a></li>
-                        <li><a href="#interest">INTEREST</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#experience">EXPERIENCE</a></li>
-                    </ul>
+                    <nav class="navbar navbar-default" data-spy="affix" data-offset="400">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav nav-pills nav-justified">
+                                <li class="active"><a href="#about">ABOUT</a></li>
+                                <li><a href="#proficiency">PROFICIENCY</a></li>
+                                <li><a href="#interest">INTEREST</a></li>
+                                <li><a href="#">PORTFOLIO</a></li>
+                                <li><a href="#experience">EXPERIENCE</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
