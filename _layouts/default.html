@@ -3,12 +3,26 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Tshiamo Bhuda">
+
     <title>{{ site.title }}</title>
 
     <link rel="stylesheet" type="text/css" href="{{ site.path }}/assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{ site.path }}/assets/css/style.css">
 
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="{{ site.path }}/assets/js/jquery.js"></script>
     <script src="{{ site.path }}/assets/js/bootstrap.min.js"></script>
 </head>
 
@@ -41,13 +55,27 @@
                         <h1 class="top-header-text">{{ site.title }}</h1>
                         <p>Interior Designer student &amp; Freelance designer/artist</p>
                     </header>
-                    <ul class="nav nav-pills nav-justified" data-spy="affix" data-offset-top="400">
-                        <li class="active"><a href="#about">ABOUT</a></li>
-                        <li><a href="#proficiency">PROFICIENCY</a></li>
-                        <li><a href="#interest">INTEREST</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#experience">EXPERIENCE</a></li>
-                    </ul>
+                    <nav class="navbar navbar-default" data-spy="affix" data-offset="400">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav nav-pills nav-justified">
+                                <li class="active"><a href="#about">ABOUT</a></li>
+                                <li><a href="#proficiency">PROFICIENCY</a></li>
+                                <li><a href="#interest">INTEREST</a></li>
+                                <li><a href="#">PORTFOLIO</a></li>
+                                <li><a href="#experience">EXPERIENCE</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -56,97 +84,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="svg-line"></div>
-
-                    <article class="text-center">
-                        <h1 class="heading-box">CONTACT</h1>
-                        <ul class="contact">
-                            <li class="center-v">
-                                <span class="glyphicon glyphicon-home"></span>
-                                <p>
-                                    1704 Block R Hlangani str <br>
-                                    Soshanguve, Pretoria 0152
-                                </p>
-                            </li>
-                            <li class="center-v">
-                                <span class="glyphicon glyphicon-envelope"></span>
-                                <p>
-                                    tuminkie.m@gmail.com
-                                </p>
-                            </li>
-                            <li class="center-v">
-                                <span class="glyphicon glyphicon-phone"></span>
-                                <p>
-                                    076&nbsp;611&nbsp;5215 <br>
-                                    074&nbsp;944&nbsp;8271
-                                </p>
-                            </li>
-                        </ul>
-                    </article>
-
-                    <article class="text-center">
-                        <h1 class="heading-box">PROFILE</h1>
-                        <dl class="align-text">
-                            <dt>Gender:</dt>
-                            <dd>Female</dd>
-                            <dt>Identity Number:</dt>
-                            <dd>930917&nbsp;0455&nbsp;0899</dd>
-                            <dt>Licence:</dt>
-                            <dd>No</dd>
-                            <dt>Relationship:</dt>
-                            <dd>Single</dd>
-                        </dl>
-                    </article>
-
-                    <article class="text-center">
-                        <h1 class="heading-box">ACHIEVEMENTS</h1>
-                        <p class="align-text">
-                            Paint a car competition <br>
-                            Distinction in Design <br>
-                        </p>
-                    </article>
-
-                    <article class="text-center">
-                        <h1 class="heading-box">ATTRIBUTES</h1>
-                        <ul class="align-text">
-                            <li>Hard working</li>
-                            <li>Reliable</li>
-                            <li>Honest</li>
-                            <li>Polite</li>
-                            <li>Responsible</li>
-                            <li>Hands on</li>
-                        </ul>
-                    </article>
-
-                    <article class="text-center" id="interest">
-                        <h1 class="heading-box">INTERESTS</h1>
-                        <ul class="align-text">
-                            <li>Illustration</li>
-                            <li>Photography</li>
-                            <li>Visual art</li>
-                            <li>Industrial design</li>
-                        </ul>
-                    </article>
-
-                    <article class="text-center">
-                        <h1 class="heading-box">REFERENCE</h1>
-                        <p class="align-text">
-                            Orvall corporate designs <br>
-                            Samketi Dlamini <br>
-                            Supervisor to Intern <br>
-                            076&nbsp;757&nbsp;6099
-                        </p>
-
-                        <p class="align-text">
-                            Uthando Primary School <br>
-                            R.J Ngobeni <br>
-                            Supervisor to Intern <br>
-                            012&nbsp;712&nbsp;0022
-                        </p>
-                    </article>
-                </div>
-                <div class="col-md-8">
+                <div class="col-md-push-4 col-md-8">
                     <article class="text-center" id="about">
                         <h1 class="heading-box">ABOUT ME</h1>
                         <p>
@@ -347,9 +285,111 @@
                         </p>
                     </article>
                 </div>
+                <div class="col-md-pull-8 col-md-4">
+                    <div class="svg-line"></div>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">CONTACT</h1>
+                        <ul class="contact">
+                            <li class="center-v">
+                                <span class="glyphicon glyphicon-home"></span>
+                                <p>
+                                    1704 Block R Hlangani str <br>
+                                    Soshanguve, Pretoria 0152
+                                </p>
+                            </li>
+                            <li class="center-v">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                                <p>
+                                    tuminkie.m@gmail.com
+                                </p>
+                            </li>
+                            <li class="center-v">
+                                <span class="glyphicon glyphicon-phone"></span>
+                                <p>
+                                    076&nbsp;611&nbsp;5215 <br>
+                                    074&nbsp;944&nbsp;8271
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">PROFILE</h1>
+                        <dl class="align-text">
+                            <dt>Gender:</dt>
+                            <dd>Female</dd>
+                            <dt>Identity Number:</dt>
+                            <dd>930917&nbsp;0455&nbsp;0899</dd>
+                            <dt>Licence:</dt>
+                            <dd>No</dd>
+                            <dt>Relationship:</dt>
+                            <dd>Single</dd>
+                        </dl>
+                    </article>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">ACHIEVEMENTS</h1>
+                        <p class="align-text">
+                            Paint a car competition <br>
+                            Distinction in Design <br>
+                        </p>
+                    </article>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">ATTRIBUTES</h1>
+                        <ul class="align-text">
+                            <li>Hard working</li>
+                            <li>Reliable</li>
+                            <li>Honest</li>
+                            <li>Polite</li>
+                            <li>Responsible</li>
+                            <li>Hands on</li>
+                        </ul>
+                    </article>
+
+                    <article class="text-center" id="interest">
+                        <h1 class="heading-box">INTERESTS</h1>
+                        <ul class="align-text">
+                            <li>Illustration</li>
+                            <li>Photography</li>
+                            <li>Visual art</li>
+                            <li>Industrial design</li>
+                        </ul>
+                    </article>
+
+                    <article class="text-center">
+                        <h1 class="heading-box">REFERENCE</h1>
+                        <p class="align-text">
+                            Orvall corporate designs <br>
+                            Samketi Dlamini <br>
+                            Supervisor to Intern <br>
+                            076&nbsp;757&nbsp;6099
+                        </p>
+
+                        <p class="align-text">
+                            Uthando Primary School <br>
+                            R.J Ngobeni <br>
+                            Supervisor to Intern <br>
+                            012&nbsp;712&nbsp;0022
+                        </p>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-center text-muted">
+                        Made with <i class="glyphicon glyphicon-heart" style="color:red"></i>, by <a href="https://github.io/tshiamobhuda">Tshiamo Bhuda</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="{{ site.path }}/assets/js/main.js"></script>
 
