@@ -177,6 +177,14 @@ ul.contact li p {
     display: none;
 }
 
+/* Footer */
+footer {
+    background: #fff;
+    border-top: 1px solid #777;
+    padding-top: 20px;
+    z-index: 1;
+}
+
 /* How things are seen in desktop mode */
 
 @media only screen and (min-width : 992px) {
@@ -201,6 +209,7 @@ ul.contact li p {
         width: 20px;
         top: 0;
         right: 0;
+        z-index: -1;
     }
 
     .align-text {
