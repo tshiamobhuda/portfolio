@@ -148,8 +148,16 @@ ul.prof li#msoffice icon {
 
 /* Professional Skills*/
 table {
-    width: 100%;
-    margin: 25px auto 0;
+    margin: 25px auto;
+}
+
+tr {
+    display: block;
+    margin-bottom: 10px;
+}
+
+td {
+    display: block;
 }
 
 /* Contact Icons */
@@ -215,5 +223,15 @@ footer {
     .align-text {
         text-align: justify;
     }
+
+    tr {
+        display: table-row;
+    }
+
+    td {
+        display: table-cell;
+    }
+
+
 
 }
